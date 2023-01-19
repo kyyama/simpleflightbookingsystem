@@ -1,0 +1,31 @@
+"http://localhost:3000/flights"
+localhost:3000 => baseurl
+flights => endpoint
+success=>statuscode =200
+erroor=>400+  -> server not reachable 404
+=> 500+ -> ther server where requesting data its malfunctioning 
+        for ex: user = "1234"
+ airline: "Air India"
+departuretime: "09:00"
+destination: "Banglore"
+fare: 1200
+id: 1
+image: "/images/air-india.jpg"
+source: "Delhi 
+
+
+
+library-set of helper functions(standalone)
+plugin -set of helper function,dependent on the library
+
+
+restApi-
+operations-crud
+c-create - {baseurl}//endpoint-method:post
+r-read -{baseurl}//endpoint-method:get-allrecords
+r-read -{baseurl}//endpoint//:id-method:get-only one record
+u-update-{baseurl}//endpoint-method:put-update all records
+u-update-{baseurl}//endpoint//:id-method:put-update only one record
+d-delete-{baseurl}//endpoint-method:delete-deletes every record
+d-delete-{baseurl}//endpoint//:id-method:delete-deletes only one record
+

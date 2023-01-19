@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  active" href="form.html">Form</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">
+                <form  id="flight" action="http://localhost:3000/flights">
+                  <input type="hidden" id="airlineId">
+                    <div class="mb-3">
+                        <label for="airline" class="form-label">Airline</label>
+                        <input  name= "airline" type="text" class="form-control" id="airline" aria-describedby="emailHelp">
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="source" class="form-label">Source</label>
+                                <input  name="source" type="text" class="form-control" id="source" aria-describedby="emailHelp">
+                                
+                              </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="destination" class="form-label">Destination</label>
+                                <input  name="destination"type="text" class="form-control" id="destination" aria-describedby="emailHelp">
+                                
+                              </div>
+
+                        </div>
+                      </div>
+                      
+                     
+                      <div class="mb-3">
+                        <label for="departuretime" class="form-label">Departure time</label>
+                        <input  name="departuretime" type="text" class="form-control" id="departuretime" aria-describedby="emailHelp">
+                        
+                      </div>
+                      <div class="mb-3 fare-wrapper">
+                        <label for="fare" class="form-label">Fare</label>
+                        <input name="fare" type="text" class="form-control" id="fare" aria-describedby="emailHelp">
+                        
+                      </div>
+                      <div class="mb-3">
+                        <label for="image" class="form-label">Image</label>
+                        <input  name="image" type="text" class="form-control" id="image" aria-describedby="emailHelp">
+                        
+                      </div>
+                      <div id="container">
+                      <button class="btn btn-primary">Submit</button> 
+                    </div> 
+                </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+  <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script> 
+  <script src="scripts/form.js"></script>
+  <script src="scripts/edit.js"></script>
+
+</body>
+</html>
